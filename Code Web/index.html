@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Сокращение ссылок</title>
+ 
+
+<head>
+    <!--<link rel="stylesheet" href="./style.css">-->
+</head>
+
+
+
+    <?php
+include("./php/nb_header.php");
+include("./php/DB_connect.php");
+
+$bt5675 = $_GET['q'];
+$bt7896 = $_GET['r'];
+
+?>
+
+       
+
+<body>
+  <div class="wrapper">
+    <h1>Сокращение URL ссылок</h1>
+    
+    
+    
+     <div id=" tp3467">
+
+            <form action="./php/linkShort.php" method="POST">
+    <input placeholder="Вставить ссылку..." name ="q"
+     <?php
+     echo 'value ="'.$bt5675.'"';
+     ?>
+    
+    class="url-input" />
+     <input placeholder="Вставить сокр.ссылку..."  name ="r"
+     
+     <?php
+     echo 'value ="'.$bt7896.'"';
+     ?>
+     class="url-input" />
+      <input type="submit" value="Получить URL\ перейти">
+  </div>
+   </form>
+    </div>
+  
+  
+</body>
+<!-- partial -->
+  
+</body>
+</html>
